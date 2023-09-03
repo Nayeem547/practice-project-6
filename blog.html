@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            font-size: 35px;
+            font-weight: 800;
+        }
+        .head_title{
+            text-align: center;
+            justify-content: center;
+            background: burlywood;
+            padding: 20px;
+        }
+        .answer_div{
+            background: blanchedalmond;
+            padding: 10px;
+        }
+        .head_title p{
+            font-size: 35px;
+            font-weight: 500;
+        }
+        span{
+            font-size: 25px;
+            font-weight: 700;
+        }
+        .brief_div{
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+   <section >
+    <div class="head_title">
+      <p>Certainly, here are explanations for the scope of <span>var,</span> <span>let,</span> and <span>const,</span> as well as the use cases of <span>null</span> and <span>undefined,</span> followed by a brief note on REST APIs:</p>
+    </div> 
+     
+    <div class="brief_div">
+    <div>
+        <h2>Scope of var, let, and const:</h2>
+         
+        <div class="answer_div">
+            <h3>var:</h3>
+            <ul>
+                <li><span>var</span> has function-level scope. It's only limited to the function it is declared in, and it can also be hoisted to the top of the function. </li>
+                <li>When declared outside any function, it becomes a global variable, accessible throughout the entire program. </li>
+                <li>Variables declared with var are function-scoped, which means they are not restricted by block statements (e.g., <span>if</span> or <span>for</span> blocks).</li>
+                
+            </ul>
+        </div>
+        <div class="answer_div">
+            <h3>Let:</h3>
+            <ul>
+                <li><span>let</span> has block-level scope. It is confined to the block it's defined in (like loops or conditionals).</li>
+                <li>Variables declared with <span>let</span> are not hoisted to the top of the block and are only accessible within that block.</li>
+                <li><span>let</span> allows you to create variables that are limited to a specific block, making it useful for preventing variable leakage.</li>
+            </ul>
+        </div>
+      
+        <div class="answer_div">
+            <h3>const:</h3>
+            <ul>
+                <li><span>const</span> also has block-level scope, similar to <span>let</span>.</li>
+                <li>The key difference is that <span>const</span> variables cannot be reassigned once they are given a value. However, the content of a <span>const</span> object (if it's an object or array) can be modified.</li>
+                
+            </ul>
+        </div>
+      
+
+
+    </div>
+       
+    <div class="null_div">
+        <h2>Use Cases of null and undefined:</h2>
+
+        <div class="answer_div">
+            <h3>null:</h3>
+            <ul>
+                <li>null represents the intentional absence of any object value or a specific object value that is intentionally empty.</li>
+                <li>It's often used to initialize variables or object properties when you want to indicate that they have no value yet.</li>
+               
+            </ul>
+        </div>
+        <div class="answer_div">
+            <h3>undefined:</h3>
+            <ul>
+                <li>undefined represents the absence of a value in a variable that has been declared but not assigned any value.</li>
+                <li>It's also the default return value of functions without a return statement.</li>
+                <li>It can indicate a variable's initial state before a value is assigned.</li>
+            </ul>
+        </div>
+
+
+    </div>
+     
+     <div class="api_div">
+        <h2>REST API (Representational State Transfer):</h2>
+        <div class="answer_div">
+            <p><span>REST API,</span> or Representational State Transfer Application Programming Interface, is a set of architectural principles and constraints for designing networked applications. Here's a brief note:</p>
+
+            <ul>
+                <li>REST is an architectural style for designing networked applications based on a client-server model. </li>
+                <li>It uses standard HTTP methods like GET (retrieve), POST (create), PUT (update), and DELETE (delete) to perform operations on resources.</li>
+                <li>Resources, represented as URLs, are the key abstractions in RESTful APIs.</li>
+                <li>REST APIs are stateless, meaning each request from a client to the server must contain all the information needed to understand and process the request.</li>
+                <li>Responses from the server are typically in JSON or XML format.</li>
+                <li>RESTful APIs are widely used for building web services, web applications, and mobile apps due to their simplicity and scalability.</li>
+            </ul>
+        </div>
+     </div>
+
+    </div>
+   </section>
+</body>
+</html>
